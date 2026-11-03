@@ -1,6 +1,10 @@
-# StockFlow
+# Business rhythm
 
-A full-stack implementation of the StockFlow project proposal: React frontend, Java 21 / Spring Boot REST API, and MySQL storage.
+Business rhythm is a full-stack order and inventory manager based on the original StockFlow project proposal: React frontend, Java 21 / Spring Boot REST API, and MySQL storage.
+
+**New to the project?** Follow [Run Business rhythm in VS Code](RUN_IN_VSCODE.md) for the complete Windows setup. Local login: **admin** / **change-me-local**.
+
+The requested [requirements.txt](requirements.txt) documents that there are no Python dependencies. Install frontend packages with npm and backend packages with Maven; a Python virtual environment is optional.
 
 ## Quick start with Docker
 
@@ -16,7 +20,7 @@ Copy `.env.example` to `.env` to set your own credentials before the first run. 
 
 ## Run without Docker
 
-Requires Java 21, Maven 3.9+, Node 22.12+ (or Node 24), and MySQL 8.4.
+Requires Java 21, Maven 3.9+, Node 22.12+ (or Node 24), and MySQL 8.0.16+ or 8.4. The local demo was verified with MySQL 8.0.40.
 
 Create the database and user as a MySQL administrator:
 

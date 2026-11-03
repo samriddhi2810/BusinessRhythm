@@ -1,0 +1,18 @@
+# Business rhythm - Python requirements
+#
+# No Python packages are required by this project.
+# The application is React + Java/Spring Boot + MySQL, not a Python application.
+# Running `python -m pip install -r requirements.txt` installs nothing.
+# A Python virtual environment is optional and does not run the app.
+#
+# Install these tools separately:
+#   Java Development Kit (JDK) 21
+#   Apache Maven 3.9+
+#   Node.js 22.12+ or 24, with npm
+#   MySQL Server 8.0.16+ (8.0.40 tested) or 8.4
+#
+# Application dependencies are declared in:
+#   backend/pom.xml                    -> downloaded by Maven
+#   frontend/package.json/package-lock.json -> installed with npm ci
+#
+# Follow RUN_IN_VSCODE.md for the complete Windows setup and run steps.
