@@ -13,7 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class Security {
  @Bean UserDetailsService users(@Value("${stockflow.username}") String name, @Value("${stockflow.password}") String password) {
-  return new InMemoryUserDetailsManager(User.withUsername(name).password(new BCryptPasswordEncoder().encode(password)).roles("OWNER").build());
+  return new InMemoryUserDetailsManager(User.withUsername(name).password("{bcrypt}" + new BCryptPasswordEncoder().encode(password)).roles("OWNER").build());
  }
  @Bean SecurityFilterChain chain(HttpSecurity http) throws Exception {
   // Only the explicit Authorization header authenticates requests; there are no cookie sessions.
